@@ -3,6 +3,7 @@
 // having babel convert our jsx into js through react.
 
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
   entry: [
@@ -44,7 +45,16 @@ module.exports = {
         //loaders.test is a regex to see which files this loader should apply to.
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"]
       }
+    ]
+  },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, './node_modules/foundation-sites/scss')
     ]
   },
   //'eval-source-map' lets us debug the code as written, rather than in bundle.js.

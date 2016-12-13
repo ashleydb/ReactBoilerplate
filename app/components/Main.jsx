@@ -5,8 +5,12 @@ var React = require('react');
 var Main = (props) => {
   return (
     <div>
-      <p>Main.jsx Rendered</p>
-      {props.children}
+      <div className="row">
+        <div className="small-centered medium-6 large-4 columns">
+          <p className="text-center">Boilerplate App</p>
+          {props.children}
+        </div>
+      </div>
     </div>
   );
 }
