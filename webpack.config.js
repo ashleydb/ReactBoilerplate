@@ -69,8 +69,7 @@ module.exports = {
   },
   sassLoader: {
     includePaths: [
-      path.resolve(__dirname, './node_modules/foundation-sites/scss'),
-      path.resolve(__dirname, './node_modules/foundation-icons')
+      path.resolve(__dirname, './node_modules/foundation-sites/scss')
     ]
   },
   //'eval-source-map' lets us debug the code as written, rather than in bundle.js.

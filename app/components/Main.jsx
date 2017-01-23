@@ -8,7 +8,7 @@ var Main = (props) => {
       <div className="row">
         <div className="small-centered medium-6 large-4 columns">
           <p className="text-center">Boilerplate App</p>
-          <p><img src={require('../images/logo.png')}/></p>
+          <p><img src="/images/logo.png"/></p>
           <p><i className="fi-social-youtube"></i></p>
           {props.children}
         </div>
